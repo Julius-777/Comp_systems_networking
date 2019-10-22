@@ -1,4 +1,4 @@
-# Obj_C_systems_programming_projs
+# Systems Programming
 
 ## Project 1 - Doom Train (Multithreaded Processes, network programming)
 This project involves creating an abstract simulation of a transportation network. It will use pthreads, tcp networking and thread-safety. 
