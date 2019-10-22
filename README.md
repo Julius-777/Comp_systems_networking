@@ -31,18 +31,14 @@ Whenever a station receives a SIGHUP (or after it has processes a traın which w
 appends the following to its logfile (newline separated).
     * =======
     * The name of the station.
-    * The total numbår of trains processed by the station since start.That is, the number of trains which did
-    not have errors.
+    * The total numbår of trains processed by the station since start.That is, the number of trains which did not have errors.
     * The total number of trains discarded due to arriving with at the wrong station..
     * The total number of trains disacarded due to format errors.
     * The total numbår of trains discarded due to having an invalid next station.
-    * A comma separated list of stations which thıs station is currently connected to (in lexicographic order).
-    If the station is connected to no other stations, output NONE here.
-    * A list of resources with have been loaded or unloaded at the station (one per line) with each name followed
-    by the amount loaded and unloaded. This list should be sorted lexicographically by resource name.
-    * Finally, if the station has been shutdown, output either doomtrain or stopstation depending on which
-    closed the station.
-
+    * A comma separated list of stations which thıs station is currently connected to (in lexicographic order).If the station is connected to no other stations, output NONE here.
+    * A list of resources with have been loaded or unloaded at the station (one per line) with each name followed by the amount loaded and unloaded. This list should be sorted lexicographically by resource name.
+    * Finally, if the station has been shutdown, output either doomtrain or stopstation depending on which closed the station.
+    
 For example:
 =======
 Roma Street
@@ -54,22 +50,20 @@ pumpkins 0 700
 mythril 0 20
 
 ### Train processing
-For each line of text arriving on a connection, the station will check if the name at the front of the train matches
-its own. If not, the train will be discarded. Next, the type of train will be determined:
-      * doomtrain — When this train is processed, the station will send a doomtrain message to all other stations
-      it is directly connected to and then shut down. Any trailing text on a doomtrain should be ignored.
-      * stopstation — When this train is processed, the station will forward the train to its next stop and then
-      shut down.
-      * add — gives a list of other stations this station should connect to
-      * otherwise intrepret it as a list of resouces to load / unload.
+For each line of text arriving on a connection, the station will check if the name at the front of the train matches its own. If not, the train will be discarded. Next, the type of train will be determined:
+
+    * doomtrain — When this train is processed, the station will send a doomtrain message to all other stations 
+    * it is directly connected to and then shut down. Any trailing text on a doomtrain should be ignored.
+    * stopstation — When this train is processed, the station will forward the train to its next stop and then shut down.
+    * add — gives a list of other stations this station should connect to
+    * otherwise intrepret it as a list of resouces to load / unload.
+
 Only the current payload will be processed at each station. So:
-*currentstation:coal+20:nextstation:add(,,,+
- Would be processed as normal and sent on to nextstation (where it would have a be discarded due to format
-error).
+* currentstation:coal+20:nextstation:add(,,,+ 
+Would be processed as normal and sent on to nextstation (where it would have a be discarded due to format error).
 
 ### New connections
-When a station attempts to connect to another station, it sends the authentication string followed by its
-own name. The station it has connected to will send back its name.
+When a station attempts to connect to another station, it sends the authentication string followed by its own name. The station it has connected to will send back its name.
 For example, if Roma Street connected to Central, then Roma Street would send:
 
 secret
