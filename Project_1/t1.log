@@ -1,0 +1,159 @@
+=======
+E
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 1
+C
+city 1
+ore -3
+wheat -2
+=======
+E
+Processed: 3
+Not mine: 0
+Format err: 0
+No fwd: 1
+C
+city 1
+ore -3
+wheat -2
+wood 1
+doomtrain
+=======
+E
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 1
+C
+stopstation
+=======
+E
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 0
+c
+doomtrain
+=======
+E
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 0
+c
+stopstation
+=======
+E
+Processed: 1
+Not mine: 2
+Format err: 3
+No fwd: 0
+c
+stopstation
+=======
+c
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 0
+n,v
+doomtrain
+=======
+c
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 0
+d
+stopstation
+=======
+E
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 0
+c
+doomtrain
+=======
+E
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 0
+c
+doomtrain
+=======
+E
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 0
+c
+doomtrain
+=======
+E
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 0
+c
+doomtrain
+=======
+E
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 0
+c
+doomtrain
+=======
+E
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 0
+c
+doomtrain
+=======
+E
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 0
+c
+doomtrain
+=======
+ggg
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 0
+me
+doomtrain
+=======
+ggg
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 0
+me
+doomtrain
+=======
+ggg
+Processed: 1
+Not mine: 0
+Format err: 0
+No fwd: 0
+me
+doomtrain
+=======
+me
+Processed: 3
+Not mine: 0
+Format err: 0
+No fwd: 0
+c,ggg
+coal -10
+doomtrain
