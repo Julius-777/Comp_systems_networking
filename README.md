@@ -82,7 +82,7 @@ test.c is the input data used to test the program and check if outputs much expe
 
 ## Authors
 
-* **Julius Miyumo ** - 
+* Julius Miyumo  
 
 ## License
 
