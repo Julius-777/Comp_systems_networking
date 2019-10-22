@@ -43,7 +43,7 @@ appends the following to its logfile (newline separated).
     • Finally, if the station has been shutdown, output either doomtrain or stopstation depending on which
     closed the station.
 
-*For example:
+For example:
 =======
 Roma Street
 25
