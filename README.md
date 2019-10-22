@@ -1,6 +1,4 @@
-# Systems Programming
-
-## Project 1 - Doom Train (Multithreaded Processes, network programming)
+# Train Station Network Project
 This project involves creating an abstract simulation of a transportation network. It will use pthreads, tcp networking and thread-safety. 
 ### Simulation
 
