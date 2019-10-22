@@ -1,0 +1,4 @@
+https://gist.github.com/MohamedAlaa/2961058
+https://www.sans.org/security-resources/sec560/netcat_cheat_sheet_v1.pdf
+http://www.openbsd.org/cgi-bin/man.cgi/OpenBSD-current/man1/nc.1?query=nc
+http://www.cplusplus.com/reference/cstdlib/realloc/
